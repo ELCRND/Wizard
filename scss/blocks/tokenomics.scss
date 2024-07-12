@@ -1,0 +1,149 @@
+.tokenomics {
+  padding-top: 200px;
+  background-color: #fff6e9;
+
+  @media screen and (max-width: 1279px) {
+    padding-top: 74px;
+  }
+}
+
+.tokenomics__container {
+  width: min(1186px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 205px;
+  display: flex;
+  gap: 92px;
+
+  @media screen and (max-width: 1279px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 57px;
+    padding-bottom: 53px;
+  }
+}
+
+.tokenomics__title {
+  margin-bottom: 94px;
+  font-family: var(--font3);
+  font-size: 72px;
+  color: var(--pink);
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 50px;
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
+.tokenomics__statistics {
+  min-height: 370px;
+  padding-left: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  background-image: url("../public/img/tokenomics/statistics_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+  font-family: var(--second-family);
+  font-size: 31px;
+  color: var(--pink-light);
+
+  @media screen and (max-width: 1279px) {
+    min-height: 234px;
+    padding-left: 43px;
+    gap: 32px;
+    font-size: 19px;
+    background-position: 20px 5px;
+    background-size: contain;
+  }
+}
+
+.statistics__index {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+
+  @media screen and (max-width: 1279px) {
+    gap: 35px;
+  }
+
+  .statistics__num {
+    display: block;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: url("../public/img/tokenomics/tokenomics_batterfly.png");
+      margin-right: 13px;
+
+      @media screen and (max-width: 1279px) {
+        margin-right: 0;
+        scale: 0.6;
+        translate: 8px 0;
+      }
+    }
+  }
+}
+
+.tokenomics__bottom {
+  height: 154px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe4bb;
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 59px;
+  color: var(--pink);
+
+  @media screen and (max-width: 1279px) {
+    height: 90px;
+  }
+
+  span:first-of-type {
+    position: relative;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 59px;
+    color: var(--pink);
+
+    @media screen and (max-width: 1279px) {
+      font-size: 34px;
+    }
+
+    img {
+      position: absolute;
+      @media screen and (max-width: 1279px) {
+        scale: 0.6;
+      }
+      &:nth-of-type(1) {
+        top: -9px;
+        left: 0;
+        translate: -100% 0;
+        @media screen and (max-width: 1279px) {
+          top: 0;
+          translate: -70% -35%;
+        }
+      }
+      &:nth-of-type(2) {
+        top: 0;
+        left: 50%;
+        translate: -20% -35%;
+        @media screen and (max-width: 1279px) {
+          translate: -30% -50%;
+        }
+      }
+      &:nth-of-type(3) {
+        right: 0;
+        translate: 100% 70%;
+        @media screen and (max-width: 1279px) {
+          translate: 70% 20%;
+        }
+      }
+    }
+  }
+}

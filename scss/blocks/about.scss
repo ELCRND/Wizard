@@ -1,0 +1,154 @@
+.about__container {
+  height: 744px;
+  padding-top: 151px;
+  display: flex;
+  background-image: url("../public/img/about/about_bg.png");
+  background-size: cover;
+  position: relative;
+
+  @media screen and (max-width: 1279px) {
+    height: auto;
+    padding-top: 86px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.about__img {
+  width: 50%;
+
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 155px;
+
+    @media screen and (max-width: 1279px) {
+      position: static;
+    }
+  }
+}
+
+.about__text {
+  width: 50%;
+  padding-left: 110px;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.about__wrap {
+  max-width: 530px;
+
+  @media screen and (max-width: 1279px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+.about__title {
+  margin-bottom: 52px;
+  font-family: var(--third-family);
+  font-size: 93px;
+  text-align: center;
+
+  @media screen and (max-width: 1279px) {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
+}
+
+.about__description {
+  margin-bottom: 48px;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  text-align: center;
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 36px;
+    font-size: 11px;
+  }
+}
+
+.about__btn {
+  width: 260px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink-light);
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 24px;
+  transition: filter 200ms ease;
+
+  @media screen and (max-width: 1279px) {
+    width: 152px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+  &:active {
+    filter: brightness(1);
+  }
+}
+
+.about__ticker {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--pink);
+
+  overflow: hidden;
+
+  @media screen and (max-width: 1279px) {
+    height: 70px;
+  }
+}
+
+.ticker__wrap {
+  display: flex;
+  align-items: center;
+  gap: 124px;
+  font-size: 32px;
+  line-height: 100%;
+  animation: tickerMove 60s linear infinite;
+
+  @media screen and (max-width: 1279px) {
+    gap: 110px;
+    font-size: 28px;
+  }
+}
+
+@keyframes tickerMove {
+  0% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    translate: -50% 0;
+  }
+}
